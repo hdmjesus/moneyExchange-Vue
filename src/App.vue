@@ -1,11 +1,17 @@
 <template>
-  <main></main>
+  <main>
+    <px-header></px-header>
+    <px-table></px-table>
+  </main>
 </template>
 
 <script>
+import PxHeader from "@/components/PxHeader";
+import PxTable from "@/components/PxTable";
+
 export default {
   name: "App",
-  components: {}
+  components: { PxHeader, PxTable }
 };
 </script>
 
