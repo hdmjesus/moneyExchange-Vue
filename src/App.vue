@@ -1,17 +1,16 @@
 <template>
   <main>
     <px-header></px-header>
-    <px-table></px-table>
+    <router-view class="container px5 sm:px-20 py-20 flex justify-center" />
   </main>
 </template>
 
 <script>
 import PxHeader from "@/components/PxHeader";
-import PxTable from "@/components/PxTable";
 
 export default {
   name: "App",
-  components: { PxHeader, PxTable }
+  components: { PxHeader }
 };
 </script>
 
