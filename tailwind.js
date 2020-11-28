@@ -15,6 +15,9 @@ module.exports = {
       margin: {
         "96": "24rem",
         "128": "32rem"
+      },
+      gridTemplateColumns: {
+        "custom-cripto": "1fr minmax(100px, 1fr) 1fr 1fr 1fr 1fr"
       }
     }
   },
