@@ -82,7 +82,7 @@ export default {
       default: () => []
     }
   },
-  data() {},
+
   methods: {
     goToCoin(id) {
       this.$router.push({ name: "coin-detail", params: { id } });

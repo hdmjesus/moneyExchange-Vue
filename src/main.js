@@ -3,6 +3,12 @@ import App from "./App.vue";
 import "@/assets/css/tailwind.css";
 import router from "@/router";
 import { dollarFilter, percentFilter } from "@/filter";
+import { VueSpinners } from "@saeris/vue-spinners";
+import Chartkick from "vue-chartkick";
+import Chart from "chart.js";
+
+Vue.use(VueSpinners);
+Vue.use(Chartkick.use(Chart));
 
 Vue.config.productionTip = false;
 Vue.filter("dollar", dollarFilter);
