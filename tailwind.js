@@ -17,7 +17,8 @@ module.exports = {
         "128": "32rem"
       },
       gridTemplateColumns: {
-        "custom-cripto": "1fr minmax(100px, 1fr) 1fr 1fr 1fr 1fr"
+        "custom-cripto": "1fr minmax(80px, 1fr) 1fr 1fr 1fr 1fr",
+        "table-titleMobile": "1fr minmax(80px, 1fr) 1fr 1fr "
       }
     }
   },

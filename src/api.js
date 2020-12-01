@@ -36,4 +36,27 @@ function getAssetHistory(coin) {
     .catch(err => console.log(err.message));
 }
 
-export default { getAssets, getAsset, getAssetHistory };
+function getMarkets(coin) {
+  return fetch(`${url}/assets/${coin}/markets?limit=5`)
+    .then(response => response.json())
+    .then(response => {
+      return response.data;
+    })
+    .catch(err => console.log(err.message));
+}
+function getExchanges(id) {
+  return fetch(`${url}/exchanges/${id}`)
+    .then(response => response.json())
+    .then(response => {
+      return response.data;
+    })
+    .catch(err => console.log(err.message));
+}
+
+export default {
+  getAssets,
+  getAsset,
+  getAssetHistory,
+  getMarkets,
+  getExchanges
+};
